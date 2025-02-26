@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= locals.description %>">
+    <title><%= locals.title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+</head>
+<body> 
+    <div class="container">
+        <%- include('../partials/header_admin.ejs')  %>
+        <main class="main">
+            <%- body %>
+        </main>
+
+        <%- include('../partials/footer.ejs')  %>
+    </div>
+     
+</body>
+</html>
