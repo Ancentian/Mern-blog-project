@@ -28,7 +28,7 @@ router.get('', async (req, res) => {
         res.render('index', {locals, posts, 
             current: page, 
             nextPage: hasNextPage ? nextPage : null,
-            currentPage: '/'
+            currentRoute: '/'
         });
     } catch (error) {
         console.log(error);
